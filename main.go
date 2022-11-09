@@ -24,9 +24,11 @@ func graph_display() {
 	test.Print()
 
 	// We visit each node through bfs. Visits displays the order through which we visited the node
+	fmt.Println("BFS Traversal")
 	visitsBFS := test.BFS(0)
 	fmt.Println(visitsBFS)
 
+	fmt.Println("DFS Traversal")
 	var visitedNodes []int
 	visitsDFS := test.DFS(0, visitedNodes)
 	fmt.Println(visitsDFS)
